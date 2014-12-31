@@ -65,12 +65,13 @@ d3.text('template.erb', function (err, template) {
 
             if (isSelected) {
                 var zones = Object.keys(selected.data);
+                currentZones.html('');
+                
                 if (_.isEmpty(zones)) {
-                    aside.classed('hidden', true);
+                    mapInfoContent.html('<p>No data available for this zone.</p>');
                     return;
                 }
 
-                currentZones.html('');
                 var zoneTabs = currentZones.selectAll('li').data(zones).enter().append('li').classed('active', function (d,i) { return i === 0; });
                 var activeTab = d3.select(zoneTabs[0][0]);
                 zoneTabs
