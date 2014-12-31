@@ -31,6 +31,10 @@ d3.text('template.erb', function (err, template) {
             data: null,
         };
 
+        d3.select('#mapInfo .close').on('click', function () {
+            aside.classed('hidden', true);
+        })
+
         function selectMapInfoTab(zone) {
             var data = selected.data[zone] || {};
             data.zone = zone;

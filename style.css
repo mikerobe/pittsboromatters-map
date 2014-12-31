@@ -42,6 +42,8 @@ svg#map path.selected {
   text-align: left;
   margin-top: 0;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
 }
 #mapInfo h2 {
   font-size: 16px;
