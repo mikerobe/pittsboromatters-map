@@ -1,0 +1,23 @@
+<section>
+<p>For properties currently zoned <%- zone %>.</p>
+</section>
+<section>
+  <h2>
+    No Longer Permitted
+  </h2>
+  <div class="content">
+    <ul>
+    <%= utils.makeList(notPermitted) %>
+    </ul>
+  </div>
+</section>
+<section>
+  <h2>
+    Now Permitted
+  </h2>
+  <div class="content">
+    <ul>
+    <%= utils.makeList(permitted) %>
+    </ul>
+  </div>
+</section>

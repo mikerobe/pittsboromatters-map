@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+svg#map {
+  background-image: url('map.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+svg#map path {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  cursor: pointer;
+}
+svg#map path:not(.selected):hover {
+  fill-opacity: 0.5;
+}
+svg#map path.selected {
+  fill-opacity: 0.7;
+}
+
+#mapInfo {
+  position: fixed;
+  right: 1em;
+  top: 1em;
+  bottom: 1em;
+  max-width: 50%;
+  background: white;
+  overflow: hidden;
+  -moz-box-shadow: -2px 0px 20px 1px #aaaaaa;
+  -webkit-box-shadow: -2px 0px 20px 1px #aaaaaa;
+  box-shadow: -2px 0px 20px 1px #aaaaaa;
+  padding: 1em;
+}
+#mapInfo h1 {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+#mapInfo h2 {
+  font-size: 16px;
+}
+#currentZones {
+  position: relative;
+  z-index: 2;
+}
+#mapInfoContent {
+  padding-left: 2px;
+  position: relative;
+  border-top: 71px solid transparent;
+  top: -71px;
+  box-sizing: border-box;
+  overflow: auto;
+  height: 100%;
+  margin-top: 15px;
+}
+/*#mapInfo .content {
+  border: 2px solid black;
+  margin: 1em 0;
+}
+#mapInfo .content:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+#useType:not(:empty):before {
+  content: " - ";
+}
+#useTypeHeader {
+  float: left;
+}
+#useTypeCode {
+  float: right;
+  min-width: 3em;
+  text-align: center;
+}
+#mapInfo .header, #mapInfo header {
+  font-weight: bold;
+}
+#mapInfo header {
+  margin-bottom: -1em;
+}
+#mapInfo ul {
+  padding-left: 0;
+}
+#mapInfo li {
+  list-style-type: none;
+  margin: 0.5em 0;
+}
+
+._x34_\.1 .color {
+  background: #1b70b8;
+  color: white;
+}
+._x32_\.1 .color {
+  background: #1a71b8; 
+  color: white;
+}
+
+*/
